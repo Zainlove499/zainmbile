@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+::selection {
+  @apply bg-blue-500/60 text-white;
+}
+
+.glass-card {
+  @apply bg-white/5 border border-white/10 shadow-[0_20px_45px_rgba(2,6,23,0.45)];
+}

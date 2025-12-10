@@ -1,0 +1,12 @@
+/node_modules
+/.pnp
+.pnp.js
+.next
+/out
+/dist
+.DS_Store
+.env*
+*.log
+.vscode
+.idea
+coverage/
