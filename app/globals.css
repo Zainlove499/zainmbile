@@ -26,7 +26,8 @@ body {
 }
 
 .section-label {
-  @apply text-xs uppercase tracking-[0.4em] text-blue-300/70;
+  @apply text-xs uppercase tracking-[0.4em]
+    text-blue-300/70;
 }
 
 .glass-card {
