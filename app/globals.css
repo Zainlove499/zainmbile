@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 body {
-  @apply text-slate-900 antialiased;
+  @apply bg-slate-950 text-slate-100 antialiased;
   font-family: var(--font-body), "Segoe UI", system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   background:
-    radial-gradient(1200px 700px at 10% -10%, rgba(16, 185, 129, 0.14), transparent 60%),
-    radial-gradient(900px 600px at 90% 0%, rgba(14, 165, 233, 0.14), transparent 55%),
-    linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    radial-gradient(1200px 600px at 15% -10%, rgba(59, 130, 246, 0.28), transparent 60%),
+    radial-gradient(900px 500px at 85% 0%, rgba(14, 165, 233, 0.22), transparent 55%),
+    linear-gradient(180deg, #020617 0%, #0b1120 55%, #020617 100%);
 }
 
 ::selection {
-  @apply bg-amber-300 text-slate-900;
+  @apply bg-blue-500/60 text-white;
 }
 
 .font-display {
@@ -26,11 +26,11 @@ body {
 }
 
 .section-label {
-  @apply text-xs uppercase tracking-[0.4em] text-teal-700/70;
+  @apply text-xs uppercase tracking-[0.4em] text-blue-300/70;
 }
 
 .glass-card {
-  @apply border border-slate-200 bg-white/80 shadow-[0_20px_45px_rgba(15,23,42,0.08)];
+  @apply border border-white/10 bg-white/5 shadow-[0_20px_45px_rgba(2,6,23,0.45)];
 }
 
 @keyframes fade-up {
