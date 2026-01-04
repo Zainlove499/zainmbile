@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply text-slate-900 antialiased;
+  font-family: var(--font-body), "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  background:
+    radial-gradient(1200px 700px at 10% -10%, rgba(16, 185, 129, 0.14), transparent 60%),
+    radial-gradient(900px 600px at 90% 0%, rgba(14, 165, 233, 0.14), transparent 55%),
+    linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+::selection {
+  @apply bg-amber-300 text-slate-900;
+}
+
+.font-display {
+  font-family: var(--font-display), "Segoe UI", system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.section-label {
+  @apply text-xs uppercase tracking-[0.4em] text-teal-700/70;
+}
+
+.glass-card {
+  @apply border border-slate-200 bg-white/80 shadow-[0_20px_45px_rgba(15,23,42,0.08)];
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fade-up 0.8s ease forwards;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.float-soft {
+  animation: float 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up,
+  .float-soft {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
